@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>FCFS Trial</title>
+    <script src="SSTFscript.js" defer></script>
+    <style>
+        #SSTFchart{
+            transform: rotate(90deg);
+            max-width: 500px;
+            max-height: 500px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Queries: <input type="number" id="number"></p>
+    <button id="add" onclick="inputQueries();">Add</button>
+
+    <p>Add head: <input type="number" id="starting"></p>
+    <button id="headbtn" onclick="addHead();">Add head</button>
+    
+    <button id="cal" onclick="SSTF();">Calculate</button>
+    <p>The Total seek time is: <input type="number" id="output"></p>
+
+    <button id="diagram" onclick="showGraph();">Show Graph</button>
+    <canvas id="SSTFchart"></canvas>
+</body>
+</html>
