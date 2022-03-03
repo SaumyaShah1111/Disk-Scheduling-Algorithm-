@@ -22,6 +22,7 @@ document.getElementById('headbtn').onclick=addHead;
 function addHead(){
     head=document.getElementById('starting').value;
 }
+document.getElementById('addDirection').onclick=addDirection;
 function addDirection(){
     var dir = document.getElementsByName('direction');  
         for(i = 0; i < dir.length; i++){
